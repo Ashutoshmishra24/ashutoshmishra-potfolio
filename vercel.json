@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/", "dest": "/assets/index.html" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/assets/$1" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "ashutosh-mishra-portfolio",
+  "version": "1.0.0",
+  "description": "Personal developer, robotics and AI startup portfolio website for Ashutosh Mishra",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "deploy:netlify": "npx -y netlify-cli deploy --prod",
+    "deploy:vercel": "npx -y vercel --prod",
+    "deploy": "npx -y netlify-cli deploy --prod",
+    "generate:qr": "node scripts/generate_qr.js"
+  },
+  "keywords": [
+    "portfolio",
+    "robotics",
+    "arduino",
+    "esp32",
+    "raspberry-pi",
+    "react",
+    "python",
+    "c-language",
+    "asonyx",
+    "netlify"
+  ],
+  "author": "Ashutosh Mishra <primeliquidpvt.lmt@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "qrcode": "^1.5.4"
+  }
+}
